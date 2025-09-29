@@ -15,4 +15,4 @@
 
 
 If you use this code, please cite:
-Bodha, K. (2025). Rotational Quantum PSO (RQPSO) – MATLAB. GitHub: Naagdant/rotational-quantum-pso.
+Dr. Kapil Bodha. (2025). Naagdant/rotational-quantum-pso: Rotational_quantum_PSO (OPTIMIZATION). Zenodo. https://doi.org/10.5281/zenodo.17223243

@@ -1,4 +1,4 @@
-# Rotational Quantum PSO (RQPSO) — MATLAB
+# Rotational Quantum PSO Algorithm (RQPSO) — MATLAB
 
 **Files**
 - RQPSO1.m — RQPSO function

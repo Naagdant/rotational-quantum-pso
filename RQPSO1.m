@@ -130,8 +130,6 @@ function [BestSol, BestFitness, Curve, PopHistRun] = RQPSO1(PopSize, MaxIter, UB
         Curve(it) = gbest_fitness;
         PopHistRun{it} = X;
     end
-    
-    % Final local search refinement on best solution (requires Optimization Toolbox)
     BestSol = gbest;
 BestFitness = gbest_fitness;
 

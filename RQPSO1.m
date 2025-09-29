@@ -1,7 +1,7 @@
 function [BestSol, BestFitness, Curve, PopHistRun] = RQPSO1(PopSize, MaxIter, UB, LB, Dim, F_obj)
     % RQPSO: Quantum Rotational PSO based on multi-qubit probability amplitudes
     % Inspired by quantum rotation gates and multi-qubit encoding for particles
-    % Improved: increased n_qubits for better representation, tuned theta0_delta to linear decrease for balanced exploration, higher c1/c2 for stronger attraction, adjusted mutation and stagnation for low-iteration performance, added final local search refinement
+    % Improved: increased n_qubits for better representation, tuned theta0_delta to linear decrease for balanced exploration, higher c1/c2 for stronger attraction, adjusted mutation and stagnation for low-iteration performance
     N = PopSize;
     % Handle scalar bounds
     if numel(LB) == 1
@@ -132,8 +132,9 @@ function [BestSol, BestFitness, Curve, PopHistRun] = RQPSO1(PopSize, MaxIter, UB
     end
     
     % Final local search refinement on best solution (requires Optimization Toolbox)
-    options = optimset('Display', 'off', 'MaxIter', 50, 'TolX', 1e-8, 'TolFun', 1e-8);
-    [BestSol, BestFitness] = fminsearch(F_obj, gbest, options);
+    BestSol = gbest;
+BestFitness = gbest_fitness;
+
     
 end
 function psi = compute_amplitudes(theta)

@@ -10,3 +10,5 @@
 **Run**
 1) Open MATLAB in this folder.
 2) Run:  test_rqpso1
+If you use this code, please cite:
+Bodha, K. (2025). Rotational Quantum PSO (RQPSO) – MATLAB. GitHub: Naagdant/rotational-quantum-pso.
